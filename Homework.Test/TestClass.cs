@@ -12,11 +12,9 @@ namespace Homework.Test
         [TestMethod]
         public void ShouldReturn_JsonOutput_FromSource_FilteredBy_ForexBuying_And_OrdeyBy_CurrencyCode_Descending()
         {
-            string fileName = "sample.json";
-            string path = Environment.CurrentDirectory;
-
+            string fileName = "OutputSample.json";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "/OutputFiles";
             new CurrencyManager()
-                .Data()
                 .Filter(x => decimal.Parse(x.ForexBuying) > 1)
                 .OrderBy(x => x.CurrencyCode, OrderType.Descending)
                 .Export(ConverterType.Json)
@@ -26,11 +24,10 @@ namespace Homework.Test
         [TestMethod]
         public void ShouldReturn_CsvOutput_FromSource_FilteredBy_ForexBuying_And_OrdeyBy_CurrencyCode_Descending()
         {
-            string fileName = "sample.csv";
-            string path = Environment.CurrentDirectory;
+            string fileName = "OutputSample.csv";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "/OutputFiles";
 
             new CurrencyManager()
-                .Data()
                 .Filter(x => decimal.Parse(x.ForexBuying) > 1)
                 .OrderBy(x => x.CurrencyCode, OrderType.Descending)
                 .Export(ConverterType.Csv)
@@ -40,11 +37,10 @@ namespace Homework.Test
         [TestMethod]
         public void ShouldReturn_XmlOutput_FromSource_FilteredBy_ForexBuying_And_OrdeyBy_CurrencyCode_Descending()
         {
-            string fileName = "sample.xml";
-            string path = Environment.CurrentDirectory;
+            string fileName = "OutputSample.xml";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "/OutputFiles";
 
             new CurrencyManager()
-                .Data()
                 .Filter(x => decimal.Parse(x.ForexBuying) > 1)
                 .OrderBy(x => x.CurrencyCode, OrderType.Descending)
                 .Export(ConverterType.Xml)

@@ -3,27 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework.csproj", "{18E91B68-3829-4D98-BC65-FFB7E293E96E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework.Plugins.Converter", "Homework.Plugins.Converter", "{56CFDC15-9279-459A-B61C-B891ED4E8DDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.Plugins.Core", "..\Homework.Plugins.Core\Homework.Plugins.Core.csproj", "{C7E0E477-021D-40EF-BB5A-30ED75A5F5A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.Plugins.Core", "..\Homework.Plugins.Core\Homework.Plugins.Core.csproj", "{C7E0E477-021D-40EF-BB5A-30ED75A5F5A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{E01D405B-4CA0-495B-87F8-E1A6662ECAC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.Plugins.XmlConverter", "..\Homework.Plugins.XmlConverter\Homework.Plugins.XmlConverter.csproj", "{D7654046-D9D4-4D9C-905F-700AA568D33B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.Plugins.XmlConverter", "..\Homework.Plugins.XmlConverter\Homework.Plugins.XmlConverter.csproj", "{D7654046-D9D4-4D9C-905F-700AA568D33B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.Plugins.CsvConverter", "..\Homework.Plugins.CsvConverter\Homework.Plugins.CsvConverter.csproj", "{B770A542-D08F-44B8-89D4-FE0A12BE24F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.Plugins.CsvConverter", "..\Homework.Plugins.CsvConverter\Homework.Plugins.CsvConverter.csproj", "{B770A542-D08F-44B8-89D4-FE0A12BE24F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.Plugins.JsonConverter", "..\Homework.Plugins.JsonConverter\Homework.Plugins.JsonConverter.csproj", "{B04C0841-7E9E-44BE-8E44-30ADCAD143FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.Plugins.JsonConverter", "..\Homework.Plugins.JsonConverter\Homework.Plugins.JsonConverter.csproj", "{B04C0841-7E9E-44BE-8E44-30ADCAD143FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework.CurrencyManagement", "Homework.CurrencyManagement", "{1612C8C9-474C-4869-AECA-532257D4D849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.CurrencyManagement", "..\Homework.CurrencyManager\Homework.CurrencyManagement.csproj", "{0829F267-EA3E-4917-A6DD-A7E656ADA806}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.CurrencyManagement", "..\Homework.CurrencyManager\Homework.CurrencyManagement.csproj", "{0829F267-EA3E-4917-A6DD-A7E656ADA806}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework.TestFolder", "Homework.TestFolder", "{98900C33-140E-4888-9EFE-9A796322260A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.Test", "..\Homework.Test\Homework.Test.csproj", "{7E82843B-BBA7-4704-8AB8-F281011DF482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework.Test", "..\Homework.Test\Homework.Test.csproj", "{7E82843B-BBA7-4704-8AB8-F281011DF482}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework.Console", "Homework.Console", "{C488FF73-0147-4FBF-9F4E-0BBF99B783D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework.ConsoleApp", "..\Homework.ConsoleApp\Homework.ConsoleApp.csproj", "{97AF9585-5D75-4E55-BB54-1FE5254853ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18E91B68-3829-4D98-BC65-FFB7E293E96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18E91B68-3829-4D98-BC65-FFB7E293E96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18E91B68-3829-4D98-BC65-FFB7E293E96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18E91B68-3829-4D98-BC65-FFB7E293E96E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7E0E477-021D-40EF-BB5A-30ED75A5F5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C7E0E477-021D-40EF-BB5A-30ED75A5F5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7E0E477-021D-40EF-BB5A-30ED75A5F5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,6 +57,10 @@ Global
 		{7E82843B-BBA7-4704-8AB8-F281011DF482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E82843B-BBA7-4704-8AB8-F281011DF482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E82843B-BBA7-4704-8AB8-F281011DF482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97AF9585-5D75-4E55-BB54-1FE5254853ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AF9585-5D75-4E55-BB54-1FE5254853ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AF9585-5D75-4E55-BB54-1FE5254853ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AF9585-5D75-4E55-BB54-1FE5254853ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +73,7 @@ Global
 		{B04C0841-7E9E-44BE-8E44-30ADCAD143FB} = {E01D405B-4CA0-495B-87F8-E1A6662ECAC1}
 		{0829F267-EA3E-4917-A6DD-A7E656ADA806} = {1612C8C9-474C-4869-AECA-532257D4D849}
 		{7E82843B-BBA7-4704-8AB8-F281011DF482} = {98900C33-140E-4888-9EFE-9A796322260A}
+		{97AF9585-5D75-4E55-BB54-1FE5254853ED} = {C488FF73-0147-4FBF-9F4E-0BBF99B783D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D5F2C14-DB85-4061-B709-7FF2341D9779}
