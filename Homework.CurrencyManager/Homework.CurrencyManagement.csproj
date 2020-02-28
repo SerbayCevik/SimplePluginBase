@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Homework.CurrencyManagement</AssemblyName>
+    <RootNamespace>Homework.CurrencyManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Homework.Plugins.Core\Homework.Plugins.Core.csproj" />
+  </ItemGroup>
+
+</Project>
