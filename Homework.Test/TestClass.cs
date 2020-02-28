@@ -18,7 +18,7 @@ namespace Homework.Test
                 .Filter(x => decimal.Parse(x.ForexBuying) > 1)
                 .OrderBy(x => x.CurrencyCode, OrderType.Descending)
                 .Export(ConverterType.Json)
-                .Save(fileName, path);
+                .Save(path, fileName);
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace Homework.Test
                 .Filter(x => decimal.Parse(x.ForexBuying) > 1)
                 .OrderBy(x => x.CurrencyCode, OrderType.Descending)
                 .Export(ConverterType.Csv)
-                .Save(fileName, path);
+                .Save(path, fileName);
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace Homework.Test
                 .Filter(x => decimal.Parse(x.ForexBuying) > 1)
                 .OrderBy(x => x.CurrencyCode, OrderType.Descending)
                 .Export(ConverterType.Xml)
-                .Save(fileName, path);
+                .Save(path, fileName);
         }
     }
 }
