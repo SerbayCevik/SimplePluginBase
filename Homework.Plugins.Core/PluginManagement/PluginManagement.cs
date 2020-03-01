@@ -8,7 +8,7 @@ using System.Reflection;
 
 namespace Homework.Plugins.Core.PluginManagement
 {
-    public class PluginManager
+    public sealed class PluginManager
     {
         private static Dictionary<ConverterType, IExport> _converters;
 

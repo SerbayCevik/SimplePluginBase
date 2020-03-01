@@ -13,7 +13,7 @@ using Homework.CurrencyManagement.Data;
 
 namespace Homework.CurrencyManagement
 {
-    public class CurrencyManager
+    public sealed class CurrencyManager
     {
         private Lazy<IEnumerable<Currency>> data = new Lazy<IEnumerable<Currency>>(() => new CurrencyDataLoader().GetData());
         private IEnumerable<Currency> Data;
