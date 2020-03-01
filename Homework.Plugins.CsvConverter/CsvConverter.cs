@@ -2,6 +2,7 @@
 using Homework.Plugins.Core.Attributes;
 using Homework.Plugins.Core.Contracts;
 using Homework.Plugins.Core.Enums;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 
@@ -19,7 +20,7 @@ namespace Homework.Plugins.CsvConverter
             using (var writer = new StreamWriter(stream))
             using (var csv = new CsvWriter(writer, cultureInfo: CultureInfo.InvariantCulture))
             {
-                csv.WriteRecord(value);
+                csv.WriteRecords(value as List<T>);
                 writer.Flush();
                 stream.Position = 0;
                 var text = reader.ReadToEnd();

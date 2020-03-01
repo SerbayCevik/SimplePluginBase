@@ -42,13 +42,9 @@ namespace Homework.CurrencyManagement
             return this;
         }
 
-        public void Save(string path, string fileName)
+        public bool Save(string path, string fileName)
         {
-            using (StreamWriter wrt = new StreamWriter(File.Open(Path.Combine(path, fileName), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite)))
-            {
-                wrt.Write(this._exportableString);
-                wrt.Flush();
-            }
+            return _exportableString.TrySave(path, fileName);
         }
 
 
