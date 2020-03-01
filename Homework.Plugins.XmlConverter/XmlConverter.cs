@@ -13,6 +13,8 @@ namespace Homework.Plugins.XmlConverter
 
     public class XmlConverter : IExport
     {
+        #region IExport Members
+
         public ConverterType ConverterType => ConverterType.Xml;
 
         public string Export<T>(T value)
@@ -33,5 +35,6 @@ namespace Homework.Plugins.XmlConverter
             }
         }
 
+        #endregion
     }
 }

@@ -6,6 +6,7 @@ namespace Homework.Plugins.Core.Factory
 {
     public class ConverterFactory : IConverterFactory
     {
+    
         public IExport GetConverterInstance(ConverterType converterType)
         {
             return PluginManager.Converters[converterType];

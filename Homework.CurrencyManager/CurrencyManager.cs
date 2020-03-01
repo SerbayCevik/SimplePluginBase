@@ -24,6 +24,12 @@ namespace Homework.CurrencyManagement
         {
             Data = data.Value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="converterType">specific convert type </param>
+        /// <returns>return the specific converter factory </returns>
         public CurrencyManager Export(ConverterType converterType)
         {
             _exporter = new ConverterFactory().GetConverterInstance(converterType);
@@ -31,17 +37,35 @@ namespace Homework.CurrencyManagement
             return this;
         }
 
+        /// <summary>
+        /// Filters external source by predicate
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public CurrencyManager Filter(Expression<Func<Currency, bool>> predicate)
         {
             Data = Data.Filter(predicate);
             return this;
         }
+
+        /// <summary>
+        /// Order external source by predicate with order type
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="orderType"></param>
+        /// <returns></returns>
         public CurrencyManager OrderBy(Expression<Func<Currency, string>> predicate, OrderType orderType)
         {
             Data = Data.OrderBy(predicate, orderType);
             return this;
         }
-
+        
+        /// <summary>
+        /// Saves the output file
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
         public bool Save(string path, string fileName)
         {
             return _exportableString.TrySave(path, fileName);

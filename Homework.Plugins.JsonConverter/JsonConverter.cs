@@ -10,10 +10,14 @@ namespace Homework.Plugins.JsonConverter
 
     public class JsonConverter : IExport
     {
+        #region IExport Members
+
         public ConverterType ConverterType => ConverterType.Json;
         public string Export<T>(T value)
         {
             return JsonConvert.SerializeObject(value);
         }
+
+        #endregion
     }
 }

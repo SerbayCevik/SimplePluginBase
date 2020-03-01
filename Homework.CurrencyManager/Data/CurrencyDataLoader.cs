@@ -9,9 +9,16 @@ namespace Homework.CurrencyManagement.Data
 {
     public class CurrencyDataLoader
     {
+        /// <summary>
+        /// set the source url 
+        /// </summary>
         private const string _url = "https://www.tcmb.gov.tr/kurlar/today.xml";
 
-        public  IEnumerable<Currency> GetData()
+        /// <summary>
+        /// get all today currencies from tcmb 
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<Currency> GetData()
         {
             try
             {

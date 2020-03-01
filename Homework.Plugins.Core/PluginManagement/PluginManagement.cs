@@ -29,7 +29,7 @@ namespace Homework.Plugins.Core.PluginManagement
             else
                 _converters.Clear();
 
-
+            //Load all marked assemblies with IExport
             List<Assembly> pluginAssemblies = LoadPlugInAssemblies();
             List<IExport> plugins = GetPlugIns(pluginAssemblies);
 
@@ -61,6 +61,8 @@ namespace Homework.Plugins.Core.PluginManagement
             foreach (Assembly currentAssembly in assemblies)
                 availableTypes.AddRange(currentAssembly.GetTypes());
 
+            // get a list of objects that implement the IExport interface AND 
+            // have the ConverterPluginAttribute
             List<Type> converterList = availableTypes.FindAll(delegate (Type t)
             {
                 List<Type> interfaceTypes = new List<Type>(t.GetInterfaces());
@@ -69,6 +71,7 @@ namespace Homework.Plugins.Core.PluginManagement
                 return !(arr == null || arr.Length == 0) && interfaceTypes.Contains(typeof(IExport));
             });
 
+            // convert the list of Objects to an instantiated list of IExports
             return converterList.ConvertAll(delegate (Type t) { return Activator.CreateInstance(t) as IExport; });
         }
     }

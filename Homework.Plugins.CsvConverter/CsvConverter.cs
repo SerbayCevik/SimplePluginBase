@@ -11,6 +11,8 @@ namespace Homework.Plugins.CsvConverter
     [ConverterPluginAttributes(ConverterType.Csv)]
     public class CsvConverter : IExport
     {
+        #region IExport Members
+
         public ConverterType ConverterType => ConverterType.Csv;
 
         public string Export<T>(T value)
@@ -28,7 +30,7 @@ namespace Homework.Plugins.CsvConverter
             }
         }
 
-
+        #endregion
 
     }
 }
