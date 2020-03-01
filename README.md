@@ -23,5 +23,5 @@ Sometimes you will want to load plugins dynamically, that is, upon deployment of
 which assemblies to load. For example, load all assemblies in a ```Plugins``` folder somewhere in your local user data.
 
 ## Third-Party Libraries
--CsvHelper https://joshclose.github.io/CsvHelper/
--Newtonsoft.Json https://www.newtonsoft.com/json
+- CsvHelper https://joshclose.github.io/CsvHelper/
+- Newtonsoft.Json https://www.newtonsoft.com/json
